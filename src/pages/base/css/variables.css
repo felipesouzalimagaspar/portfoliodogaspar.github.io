@@ -1,0 +1,38 @@
+/* Variables */
+:root {
+    /* Colors */
+    --color-primary: #6b1bab;
+    --color-light: #fff;
+    --color-gray-light : #e1e1e1;
+    --color-gray : #717171;
+    --color-gray-dark : #313131;
+    --color-dark : #111;
+    /* Fonts Style */
+    /* lexend bold|regular e inter regular|bold */
+    --font-style-basic: 'Roboto', sans-serif;
+    --font-size-basic: 18px;
+    --line-height-basic: 1.5;
+    /* z-index patterns */
+    --z-background-index: 1;
+    --z-base-index: 5;
+    --z-medium-index: 10;
+    --z-top-index: 15;
+    --z-modal-index: 20;
+    --z-force-index: 25;
+    /* Space Unity*/
+    --space-unity: 10px;
+    /* Font-Weight */
+    --font-thin: 100;
+    --font-regular: 400;
+    --font-bold: 600;
+    --font-extra-bold: 900;
+    /* Breakpoints */
+    --xs-screen: 320px;
+    --sm-screen: 576px;
+    --md-screen: 768px;
+    --lg-screen: 992px;
+    --xl-screen: 1200px;
+    --xxl-screen: 1400px;
+    /* Components */
+    --loader-duration: 2s;
+}

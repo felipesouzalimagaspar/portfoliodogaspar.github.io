@@ -1,0 +1,26 @@
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+body, #root {
+    font-family: var(--font-style-basic);
+    font-size: var(--font-size-basic);
+    line-height: var(--line-height-basic);
+    color: var(--color-gray-dark);
+    background-color: var(--color-light);
+    font-weight: var(--font-regular);    
+    z-index: var(--z-base-index);
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul { list-style-type: none; }
+a {
+    color: unset;
+    text-decoration: none;    
+}
+*:focus { outline-color: var(--color-primary); }

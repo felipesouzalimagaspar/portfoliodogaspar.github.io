@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-unity);
+}
+header > nav > ul { display: flex; }
+header > nav > ul > li { padding-top: calc(1/2 * var(--space-unity)); }
+
+header > input[type="checkbox"] { display: none; }
+header > menu { display: none; }
+footer > hr {
+    border: solid 1px var(--color-light);
+    margin-inline: var(--space-unity);
+}
+footer > div#copyright {
+    text-align: center;
+}
