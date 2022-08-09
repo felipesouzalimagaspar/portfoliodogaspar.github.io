@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/blogfoliodogaspar.github.io/static/css/main.26ebe8b8.css",
-    "main.js": "/blogfoliodogaspar.github.io/static/js/main.5a366126.js",
+    "main.js": "/blogfoliodogaspar.github.io/static/js/main.d84ebb23.js",
     "index.html": "/blogfoliodogaspar.github.io/index.html",
     "main.26ebe8b8.css.map": "/blogfoliodogaspar.github.io/static/css/main.26ebe8b8.css.map",
-    "main.5a366126.js.map": "/blogfoliodogaspar.github.io/static/js/main.5a366126.js.map"
+    "main.d84ebb23.js.map": "/blogfoliodogaspar.github.io/static/js/main.d84ebb23.js.map"
   },
   "entrypoints": [
     "static/css/main.26ebe8b8.css",
-    "static/js/main.5a366126.js"
+    "static/js/main.d84ebb23.js"
   ]
 }
