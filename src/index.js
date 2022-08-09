@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom/client";
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -12,11 +12,11 @@ const root = ReactDOM.createRoot(
   document.getElementById("root")
 );
 root.render(
-  <BrowserRouter>
+  <HashRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path="/" element={<BlankPage />} />
       <Route path="expenses" element={<Expenses />} />
       <Route path="invoices" element={<Invoices />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
