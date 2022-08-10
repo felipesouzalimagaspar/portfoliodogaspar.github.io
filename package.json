@@ -2,7 +2,7 @@
   "name": "portfolio-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://felipesouzalimagaspar.github.io/blogfoliodogaspar.github.io",
+  "homepage": "/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
@@ -10,6 +10,7 @@
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-github-btn": "^1.3.0",
     "react-html-comment": "^2.0.14",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
@@ -42,6 +43,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "react-axios": "^2.0.6",
+    "recharts": "^2.1.13"
   }
 }

@@ -4,8 +4,8 @@ export default function Loader() {
         document.querySelector(".loader").style.display = "none";
     }, 2600);
     return (
-        <div class="loader">
-            <span class="spinner"></span>    
+        <div className="loader">
+            <span className="spinner"></span>    
         </div>
     );
   }

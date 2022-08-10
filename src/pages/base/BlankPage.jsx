@@ -6,10 +6,17 @@ import {
   WhatsappLogo,
   Envelope,
   PhoneOutgoing,
-  DotsThreeVertical
+  List,
+  X,
+  HandFist,
+  Article,
+  House,
+  Browsers,
+  ChatTeardropDots
 } from "phosphor-react";
 
 import Loader from "./../../components/animations/Loader.jsx";
+import Home from "./../home/Home.jsx";
 
 import './css/variables.css';
 import './css/reset.css';
@@ -33,18 +40,19 @@ export default function BlankPage() {
           </ul>
         </nav>
         <input type="checkbox" name="toggleMenu" id="toggleMenu" />
-        <label for="toggleMenu"><DotsThreeVertical size={32} weight="bold" /></label>
+        <label htmlFor="toggleMenu"><List size={32} weight="bold" /><X size={32} weight="bold" /></label>
         <menu>
             <ul>
-                <li><a href="/">Sobre mim</a></li>
-                <li><a href="/">Meus artigos</a></li>
-                <li><a href="/">Meu portfólio</a></li>
-                <li><a href="/">Fale comigo</a></li>
+              <li><a href="/"><House size={24} weight="bold" />Home</a></li>
+                <li><a href="/"><HandFist size={24} weight="bold" />Sobre mim</a></li>
+                <li><a href="/"><Article size={24} weight="bold" />Meus artigos</a></li>
+                <li><a href="/"><Browsers size={24} weight="bold" />Meu portfólio</a></li>
+                <li><a href="/"><ChatTeardropDots size={24} weight="bold" />Fale comigo</a></li>
             </ul>
         </menu>
       </header>
       <main>
-        <h1>Teste</h1>
+        <Home />
       </main>
       <footer>
         <hr />

@@ -1,0 +1,141 @@
+main > section:first-of-type {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    position: relative;
+}
+main > section:first-of-type > h1 {
+    font-family: monospace;    
+    color: var(--color-light);
+    text-shadow: 5px 5px 5px var(--color-shadow);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: .6rem;
+    z-index: var(--z-top-index);
+}
+main > section:first-of-type > h1::before {
+    text-transform: uppercase;
+    content: "Blog + Portfólio do Felipe Gaspar";
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    display: inline-block;
+    animation: letters 4s ease-out var(--loader-duration) forwards;
+}
+main > section:first-of-type > h1::after {    
+    content: "_";
+    display: inline-block;
+    animation: blinking 0.75s step-end infinite;
+}
+main > section:first-of-type::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    background-image: linear-gradient(var(--color-primary-dark), var(--color-primary-light));
+    z-index: var(--z-medium-index);
+}
+main > section:nth-of-type(2) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: calc(2 * var(--space-unity));
+    flex-direction: column;
+    gap: calc(3 * var(--space-unity));
+}
+main > section:nth-of-type(2) > article > h2 {
+    align-self: flex-start;
+    position: relative;
+}
+main > section:nth-of-type(2) > article > h2::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 40px;
+    bottom: 0px;
+    left: -10px;
+    background-color: var(--color-primary);
+}
+main > section:nth-of-type(2) > article > h2::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 5px;
+    bottom: 0px;
+    left: -10px;
+    background-color: var(--color-primary);
+}
+main > section:nth-of-type(2) > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-unity);
+}
+main > section:nth-of-type(2) > article > img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(0 0 0.75rem var(--color-primary-dark));
+    margin: var(--space-unity);
+    animation: all 1s ease-in-out;
+}
+main > section:nth-of-type(2) > article > img:hover,
+main > section:nth-of-type(2) > article > img:active,
+main > section:nth-of-type(2) > article > img:focus {
+    content: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main > section:nth-of-type(2) > article > p { text-align: justify; }
+main > section:nth-of-type(2) > article > p > strong { color: var(--color-primary-dark); }
+main > section:nth-of-type(2) > article > p > strong {
+    cursor: pointer;
+    position: relative;
+}
+main > section:nth-of-type(2) > article > p > strong:hover small,
+main > section:nth-of-type(2) > article > p > strong:active small,
+main > section:nth-of-type(2) > article > p > strong:focus small { display: block; }
+main > section:nth-of-type(2) > article > p > strong > small {
+    position: absolute;
+    padding: var(--space-unity);
+    white-space: nowrap;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px var(--color-shadow);
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: var(--z-medium-index);
+}
+main > section:nth-of-type(2) > article, main > section:nth-of-type(2) > aside {
+    width: 100%;
+    min-height: 300px;
+}
+main > section:nth-of-type(2) > aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(2 * var(--space-unity));
+}
+main > section:nth-of-type(2) > aside > div {
+    min-height: 300px !important;
+}
+@keyframes blinking { from, to { visibility: hidden; } 50% { visibility: visible; } }
+@keyframes letters {
+    0% { max-width: 1ch; }
+    100% { max-width: 34ch; }
+}
+@media screen and (min-width: 768px) {
+    main > section:first-of-type > h1 { font-size: 1rem; }
+    main > section:nth-of-type(2) > article { width: 65%; }
+    main > section:nth-of-type(2) > aside { width: 35%; }
+    main > section:nth-of-type(2) { flex-direction: row; }
+}
