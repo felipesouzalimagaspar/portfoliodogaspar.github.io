@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/blogfoliodogaspar.github.io/static/css/main.26ebe8b8.css",
-    "main.js": "/blogfoliodogaspar.github.io/static/js/main.d84ebb23.js",
+    "main.css": "/blogfoliodogaspar.github.io/static/css/main.01f043d0.css",
+    "main.js": "/blogfoliodogaspar.github.io/static/js/main.a118a0f8.js",
+    "static/media/bg.jpg": "/blogfoliodogaspar.github.io/static/media/bg.bb45f9d7080827a90059.jpg",
+    "static/media/familia.jpg": "/blogfoliodogaspar.github.io/static/media/familia.b366aced65ea378bef22.jpg",
+    "static/media/felipe.jpg": "/blogfoliodogaspar.github.io/static/media/felipe.d6a165cc0580d7273dca.jpg",
     "index.html": "/blogfoliodogaspar.github.io/index.html",
-    "main.26ebe8b8.css.map": "/blogfoliodogaspar.github.io/static/css/main.26ebe8b8.css.map",
-    "main.d84ebb23.js.map": "/blogfoliodogaspar.github.io/static/js/main.d84ebb23.js.map"
+    "main.01f043d0.css.map": "/blogfoliodogaspar.github.io/static/css/main.01f043d0.css.map",
+    "main.a118a0f8.js.map": "/blogfoliodogaspar.github.io/static/js/main.a118a0f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.26ebe8b8.css",
-    "static/js/main.d84ebb23.js"
+    "static/css/main.01f043d0.css",
+    "static/js/main.a118a0f8.js"
   ]
 }

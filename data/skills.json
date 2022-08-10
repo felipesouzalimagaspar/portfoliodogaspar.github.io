@@ -1,0 +1,62 @@
+[
+    {
+      "subject": "Programação Hardcore",
+      "A": 150,
+      "B": 150,
+      "fullMark": 150
+    },
+    {
+      "subject": "JS",
+      "A": 100,
+      "B": 100,
+      "fullMark": 150
+    },
+    {
+      "subject": "HTML",
+      "A": 140,
+      "B": 140,
+      "fullMark": 150
+    },
+    {
+      "subject": "CSS",
+      "A": 120,
+      "B": 120,
+      "fullMark": 150
+    },
+    {
+      "subject": "REST",
+      "A": 120,
+      "B": 120,
+      "fullMark": 150
+    },
+    {
+      "subject": "Trabalho em equipe",
+      "A": 140,
+      "B": 140,
+      "fullMark": 150
+    },
+    {
+      "subject": "React",
+      "A": 60,
+      "B": 100,
+      "fullMark": 150
+    },
+    {
+      "subject": "POO",
+      "A": 130,
+      "B": 130,
+      "fullMark": 150
+    },
+    {
+      "subject": "PHP",
+      "A": 150,
+      "B": 150,
+      "fullMark": 150
+    },
+    {
+      "subject": "SQL",
+      "A": 130,
+      "B": 130,
+      "fullMark": 150
+    }
+  ]
