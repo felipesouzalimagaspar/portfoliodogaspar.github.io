@@ -44,10 +44,10 @@ export default function BlankPage() {
         <menu>
             <ul>
               <li><a href="/"><House size={24} weight="bold" />Home</a></li>
-                <li><a href="/"><HandFist size={24} weight="bold" />Sobre mim</a></li>
-                <li><a href="/"><Article size={24} weight="bold" />Meus artigos</a></li>
-                <li><a href="/"><Browsers size={24} weight="bold" />Meu portfólio</a></li>
-                <li><a href="/"><ChatTeardropDots size={24} weight="bold" />Fale comigo</a></li>
+                <li><a href="#about"><HandFist size={24} weight="bold" />Sobre mim</a></li>
+                <li><a href="#sketches"><Browsers size={24} weight="bold" />Meu portfólio</a></li>
+                <li><a href="#posts"><Article size={24} weight="bold" />Meus artigos</a></li>
+                <li><a href="#contact"><ChatTeardropDots size={24} weight="bold" />Fale comigo</a></li>
             </ul>
         </menu>
       </header>
@@ -55,7 +55,6 @@ export default function BlankPage() {
         <Home />
       </main>
       <footer>
-        <hr />
         <div id="copyright">
           © {currentYear} - Felipe Gaspar - Todos os Direitos Reservados
         </div>

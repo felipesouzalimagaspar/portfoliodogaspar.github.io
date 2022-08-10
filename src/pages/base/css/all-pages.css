@@ -13,7 +13,10 @@ header {
     position: fixed;
     width: 100vw;
 }
-header > nav > ul { display: flex; }
+header > nav > ul {
+    display: flex;
+    gap: calc(1/2 * var(--space-unity));
+}
 header > nav > ul > li { padding-top: calc(1/2 * var(--space-unity)); }
 header > nav > ul > li:hover,
 header > nav > ul > li:focus,

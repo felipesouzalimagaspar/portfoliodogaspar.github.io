@@ -4,16 +4,26 @@ import felipe from './img/felipe.jpg';
 import familia from './img/familia.jpg';
 
 import React, { useState, useEffect } from 'react';
+import { useForm } from "react-hook-form";
 import axios from 'axios';
 import GitHubButton from 'react-github-btn'
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
 
 export default function Home() {
   
+  const { register, handleSubmit } = useForm();
+  const onSubmit = data => console.log(data);
+
   const [skills, setSkills] = useState([]);
   useEffect(() => {
-      axios.get("/data/skills.json")
+      axios.get(process.env.PUBLIC_URL + "/data/skills.json")
           .then(res => {setSkills(res.data)});      
+  }, [])  
+
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+      axios.get(process.env.PUBLIC_URL + "/data/portfolio.json")
+          .then(res => {setProjects(res.data)});      
   }, [])  
 
   return (
@@ -21,7 +31,7 @@ export default function Home() {
       <section style={{ backgroundImage: `url(${bg})` }}>
         <h1></h1>
       </section>
-      <section>
+      <section id="about">
         <article>
           <h2>Sobre mim</h2>
           <img src={felipe} alt="Felipe" style={{ backgroundImage: `url(${familia})` }}/>
@@ -40,6 +50,66 @@ export default function Home() {
           </ResponsiveContainer>
           <GitHubButton href="https://github.com/felipesouzalimagaspar" data-size="large" data-show-count="true" aria-label="Follow @felipesouzalimagaspar on GitHub">Follow @felipesouzalimagaspar</GitHubButton>
         </aside>
+      </section>
+      <section id="sketches">
+        <h2>Meu portfólio</h2>
+        <ul>
+          {projects.map((project, index) => (
+              <li key={index}>
+                  <figure><img src={project.thumb} alt={project.name} /></figure>
+                  <h3>{project.name}</h3>
+                  <div>
+                    <p><strong>Descrição: </strong>{project.description}</p>
+                    <p><strong>Linguagens: </strong>{project.languages}</p>
+                    <p><strong>Status: </strong>{
+                      project.done === true ? 'Finalizado' : 'Em desenvolvimento'
+                    }</p>
+                    {
+                      project.done === true 
+                      ? <>
+                            <div>
+                              <GitHubButton 
+                                href={project.url}
+                                data-icon="octicon-eye"
+                                data-size="large"
+                                data-show-count="true"
+                              >Watch</GitHubButton>
+                              <GitHubButton 
+                                href={project.url}
+                                data-icon="octicon-star"
+                                data-size="large"
+                                data-show-count="true"
+                              >Star</GitHubButton>
+                            </div>
+                      </>
+                      : ''
+                    }
+                  </div>
+              </li>
+          ))}
+        </ul>
+      </section>
+      <section id="posts">
+        <h2>Meus artigos</h2>
+        <span>Não há posts ainda</span>
+      </section>
+      <section id="contact">
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <aside>
+            <h3>Fale comigo</h3>
+            <small><strong>Telefone: </strong>+55 28 99950-2008</small>
+            <small><strong>E-mail: </strong>felipesouzalimagaspar@gmail.com</small>
+            <small>Ou se preferir, me mande uma mensagem através do formulário a seguir.</small>
+          </aside>
+          <div>
+            <input type="text" placeholder="Nome completo" {...register("Nome completo", {required: true, max: 250, min: 5, maxLength: 80})} />
+            <input type="text" placeholder="E-mail" {...register("E-mail", {required: true, pattern: /^\S+@\S+$/i})} />
+            <input type="tel" placeholder="Telefone" {...register("Telefone", {required: true, max: 12, min: 8, maxLength: 12})} />
+            <textarea placeholder="Deixe-me uma mensagem" {...register("Mensagem", {required: true})} />
+            <input type="submit" value="Enviar"/>
+          </div>
+        </form>
+        
       </section>
     </>
   );
