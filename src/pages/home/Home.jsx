@@ -56,7 +56,7 @@ export default function Home() {
         <ul>
           {projects.map((project, index) => (
               <li key={index}>
-                  <figure><img src={project.thumb} alt={project.name} /></figure>
+                  <figure><img src={process.env.PUBLIC_URL + project.thumb} alt={project.name} /></figure>
                   <h3>{project.name}</h3>
                   <div>
                     <p><strong>Descrição: </strong>{project.description}</p>
