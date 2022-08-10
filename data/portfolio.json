@@ -1,0 +1,32 @@
+[
+    {
+        "name": "viacep-client",
+        "description": "Biblioteca para consumo do ViaCEP",
+        "languages": "Javascript",
+        "thumb": "/data/img/viacep.png",
+        "url": "https://github.com/felipesouzalimagaspar/viecep-client",
+        "done": true
+    },
+    {
+        "name": "fastapi-project",
+        "description": "API modularizada para livros e autores, ampliavel para quaisquer outras abstrações apenas com a criação da camada model.",
+        "languages": "FastAPI, Python, Swagger e Redis",
+        "thumb": "/data/img/fastapi.png",
+        "url": "https://github.com/felipesouzalimagaspar/fastapi-project",
+        "done": true
+    },
+    {
+        "name": "site-admin",
+        "description": "Gerênciador de Conteúdos para sites institucionais e blogs",
+        "languages": "PHP, MySQLi, Doctrine, Twig e Slim",
+        "thumb": "/data/img/siteadmin.png",
+        "done": false
+    },
+    {
+        "name": "form-validator-web",
+        "description": "Validador de formulários via teste PHPUnit e Codeception para testes de unidade e aceitação",
+        "languages": "PHP, PHPUnit, Codeception ",
+        "thumb": "/data/img/codeception.png",
+        "done": false
+    }
+]
