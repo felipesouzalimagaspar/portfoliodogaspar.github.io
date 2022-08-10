@@ -21,7 +21,7 @@ main > section:first-of-type > h1 {
 }
 main > section:first-of-type > h1::before {
     text-transform: uppercase;
-    content: "Blog + Portfólio do Felipe Gaspar";
+    content: "Portfólio do Felipe Gaspar";
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
@@ -233,7 +233,7 @@ main > section:nth-of-type(5) > form > aside, main > section:nth-of-type(5) > fo
 @keyframes blinking { from, to { visibility: hidden; } 50% { visibility: visible; } }
 @keyframes letters {
     0% { max-width: 1ch; }
-    100% { max-width: 34ch; }
+    100% { max-width: 26ch; }
 }
 @media screen and (min-width: 768px) {
     main > section:first-of-type > h1 { font-size: 1rem; }
